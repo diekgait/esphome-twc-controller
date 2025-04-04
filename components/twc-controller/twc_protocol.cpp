@@ -806,7 +806,7 @@ namespace esphome {
             }
 
             if (this->flow_control_pin_ != nullptr)
-                this->flow_control_pin_->digital_write(false;
+                this->flow_control_pin_->digital_write(false);
 
             serial_->write_array(outputBuffer, j);
             serial_->flush(); // Make sure the serial data has finished sending before putting the RS485 transceiver back into receive mode
